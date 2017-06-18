@@ -5,6 +5,7 @@ environment: base
 file_client: local
 
 gitfs_provider: gitpython
+git_pillar_provider: gitpython
 
 fileserver_backend:
   - git
