@@ -1,0 +1,18 @@
+state_verbose: True
+
+environment: base
+
+file_client: local
+
+gitfs_provider: gitpython
+
+fileserver_backend:
+  - git
+
+gitfs_remotes:
+  - https://github.com/puyonexus/salt.git
+
+ext_pillar:
+  - git:
+    - master https://github.com/puyonexus/salt-pillar.git:
+      - env: base
